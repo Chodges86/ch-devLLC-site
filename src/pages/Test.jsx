@@ -1,10 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+const port = process.env.PORT || 3000
+
 const Test = () => {
   const [members, setMembers] = useState();
 
-  const baseURL = `https://seashell-app-hraoe.ondigitalocean.app/api`;
+  const baseURL = `http://localhost:${port}/api`;
 
   useEffect(() => {
     async function fetchMembers() {
