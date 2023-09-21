@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Test from "./pages/Test";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route index element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/test" element={<Test/>} />
         </Routes>
         <Footer />
       </HelmetProvider>

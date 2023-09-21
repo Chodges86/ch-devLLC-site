@@ -8,7 +8,7 @@ const Header = () => {
       <img src={logo} alt="" />
       <div className={classes.navList}>
         <NavLink to="/" className={() => classes.nav} end>
-          Landing
+          Home
         </NavLink>
         <NavLink to="/contact" className={() => classes.nav} end>
           Contact Me
