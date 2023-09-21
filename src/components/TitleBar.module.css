@@ -1,0 +1,41 @@
+.titleBar {
+  background-color: #222831;
+  margin: 0;
+}
+
+.titleBar h1 {
+  margin: 0;
+  padding: 4%;
+  text-align: center;
+  font-family: Julius Sans One;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Julius Sans One", sans-serif;
+  background: linear-gradient(180deg, #eeeeee 0% 25%, #0092CA 90% 100% );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1200px) {
+    .titleBar h1 {
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .titleBar h1 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .titleBar h1 {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .titleBar h1 {
+        font-size: .75rem;
+    }
+}

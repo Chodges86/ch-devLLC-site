@@ -1,0 +1,87 @@
+.aboutProcessView {
+    margin: 0;
+    background-color: #eeeeee;
+}
+
+.aboutProcessView h1 {
+    margin: 0;
+    margin-left: 60px;
+    padding-top: 30px;
+    text-align: left;
+    color: #526D82;
+    font-family: "Julius Sans One", sans-serif;
+}
+
+.aboutProcessContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutProcessContent p {
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 30px;
+    margin: 40px;
+    color: #526D82;
+    word-wrap: break-word;
+}
+
+.aboutProcessContent img {
+    scale: .75;
+    margin: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutProcessView h1 {
+        font-size: 30px;
+    }
+    .aboutProcessContent p {
+        font-size: 25px;
+    }
+    .aboutProcessContent img {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutProcessContent {
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .aboutProcessContent img {
+        height: 300px;
+        margin: 0;
+    }
+    .aboutProcessContent p {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .aboutProcessView h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .aboutProcessContent img {
+        height: 250px;
+    }
+    .aboutProcessContent p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .aboutProcessContent p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .aboutProcessView h1 {
+        font-size: 20px;
+    }
+    .aboutProcessContent img {
+        height: 200px;
+    }
+    .aboutProcessContent p {
+        margin-inline: 5px;
+    }
+}

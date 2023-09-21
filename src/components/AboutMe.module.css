@@ -1,0 +1,91 @@
+.aboutMeTitle {
+    background-color: #222831;
+    margin: 0;
+    text-align: start;
+}
+.aboutMeTitle h1 {
+    font-family: "Julius Sans One", sans-serif;
+    color: #eeeeee;
+    margin: 0;
+    padding-top: 20px;
+    margin-left: 70px;
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: center;
+    padding-inline: 60px;
+    align-items: center;
+    background-color: #222831;
+}
+
+.aboutMe p {
+    margin: 40px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 30px;
+    color: #eeeeee;
+}
+
+.aboutMe img {
+    scale: .85;
+}
+
+@media screen and (max-width: 1200px) {
+    .aboutMeTitle h1 {
+        font-size: 30px;
+    }
+    .aboutMe p {
+        font-size: 25px;
+    }
+    .aboutMe img {
+        scale: .75;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .aboutMeTitle h1 {
+        font-size: 25px;
+    }
+    .aboutMe {
+        flex-direction: column;
+    }
+    .aboutMe img {
+        height: 300px;
+    }
+    .aboutMe p {
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .aboutMeTitle h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .aboutMe img {
+        height: 250px;
+    }
+    .aboutMe p {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .aboutMe {
+        padding-inline: 5px;
+    }
+    .aboutMe p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .aboutMeTitle h1 {
+        font-size: 20px;
+    }
+    .aboutMe img {
+        height: 200px;
+    }
+    .aboutMe p {
+        margin-inline: 5px;
+        font-size: 17px;
+    }
+}

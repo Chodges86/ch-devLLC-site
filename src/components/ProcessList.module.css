@@ -1,0 +1,68 @@
+.processList {
+    background-color: #DDE6ED;
+    padding-inline: 70px;
+}
+
+.processList h1 {
+    margin: 0;
+    margin-left: 60px;
+    padding-top: 30px;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 30px;
+    text-align: left;
+    color: #526D82;
+    font-weight: 100;
+}
+
+.processList ul {
+    margin: 0;
+    padding-block: 50px;
+}
+
+.processList li {
+    margin: 0;
+    margin-left: 100px;
+    text-align: left;
+    font-family: "Archivo Narrow", sans-serif;
+    font-size: 25px;
+    color: #526D82;
+}
+
+@media screen and (max-width: 900px) {
+    .processList {
+        padding-inline: 10px;
+    }
+    .processList h1 {
+        font-size: 25px;
+    }
+    .processList li {
+        font-size: 20px;
+    }
+    .processList ul {
+        padding-block: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .processList h1 {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+    .processList li {
+        font-size: 17px;
+        margin-left: 15px;
+    }
+    .processList ul {
+        padding-block: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .processList h1 {
+        margin-left: 2px;
+    }
+    .processList li {
+        font-size: 15px;
+        margin-left: 2px;
+    }
+}

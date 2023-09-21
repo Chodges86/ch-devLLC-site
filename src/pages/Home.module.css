@@ -1,0 +1,178 @@
+.overview {
+  background-color: #222831;
+}
+
+.overview p {
+  margin-block: 0;
+  margin-inline: 5rem;
+  color: #eeeeee;
+  padding: 50px;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 2rem;
+}
+
+.servicesTitle {
+  background-color: #222831;
+  font-family: "Julius Sans One", sans-serif;
+  margin: 0;
+  padding: 30px;
+  color: #eeeeee;
+}
+
+.services {
+  padding-block: 50px;
+  padding-inline: 20px;
+  background-color: #eeeeee;
+}
+
+.contactLink {
+  font-family: "Archivo Narrow", sans-serif;
+}
+.contactLink h1 {
+  color: #526d82;
+  font-size: 45px;
+}
+.contactLink a {
+  cursor: pointer;
+  color: #526d82;
+}
+
+.contactLink h1 :hover {
+  transition: all 0.4s ease-out;
+  font-size: 105%;
+  -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+  filter: drop-shadow(5px 5px 5px #a0a0a0);
+  cursor: pointer;
+  color: #3b5468;
+}
+
+.detailView {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  margin-inline: 300px;
+  height: fit-content;
+}
+
+.detailView h1 {
+  font-family: "Julius Sans One", sans-serif;
+  margin-block: 40px;
+  color: #526d82;
+}
+
+.detailView p {
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 30px;
+  color: #526d82;
+}
+
+.detailView img {
+  -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+  filter: drop-shadow(5px 5px 5px #a0a0a0);
+}
+
+.details {
+  text-align: left;
+}
+
+.details li {
+  color: #526d82;
+  font-family: "Archivo Narrow", sans-serif;
+  font-size: 28px;
+}
+
+.details h2 {
+  color: #526d82;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.details h2 :hover {
+  transition: all 0.4s ease-out;
+  font-size: 105%;
+  -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+  filter: drop-shadow(5px 5px 5px #a0a0a0);
+}
+
+.details a {
+  color: #526d82;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.closeCircle {
+  position: absolute;
+  right: 30px;
+}
+
+.closeCircle :hover {
+  scale: 1.1;
+  -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+  filter: drop-shadow(5px 5px 5px #a0a0a0);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .overview p {
+    font-size: 1.5rem;
+    margin-inline: 2rem;
+  }
+  .detailView {
+    margin-inline: 100px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .overview p {
+    font-size: 1rem;
+    margin-inline: 1rem;
+    padding: 30px;
+  }
+  .servicesTitle {
+    font-size: 1.5rem;
+  }
+  .detailView {
+    margin-inline: 50px;
+  }
+  .detailView h1 {
+    font-size: 30px;
+  }
+  .detailView p {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .overview p {
+    font-size: 1rem;
+    margin-inline: 0.5rem;
+    padding: 15px;
+  }
+  .detailView h1 {
+    font-size: 25px;
+  }
+  .detailView p {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .overview p {
+    font-size: 0.85rem;
+    padding-top: 5px;
+  }
+  .servicesTitle {
+    font-size: 1rem;
+  }
+  .detailView {
+    margin-inline: 20px;
+  }
+  .detailView img {
+    height: 90px;
+  }
+  .detailView h1 {
+    font-size: 1rem;
+  }
+  .detailView p {
+    font-size: 0.85rem;
+  }
+}

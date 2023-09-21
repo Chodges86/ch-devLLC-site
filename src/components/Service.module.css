@@ -1,0 +1,90 @@
+.serviceWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.service {
+    display: flex;
+    justify-content: space-between;
+    padding-block: 1rem;
+    width: 100%;
+}
+
+.serviceWrapper :hover img {
+    transition: all .4s ease-out;
+    scale: 1.0;
+    -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+    filter:         drop-shadow(5px 5px 5px #a0a0a0);
+    cursor: pointer;
+}
+
+.serviceWrapper :hover h1 {
+    transition: all .4s ease-out;
+    scale: 1.1;
+    -webkit-filter: drop-shadow(5px 5px 5px #a0a0a0);
+    filter:         drop-shadow(5px 5px 5px #a0a0a0);
+    cursor: pointer;
+}
+
+
+.service h1 {
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 25px;
+    color: #526D82;
+    width: 90%;
+    text-align: start;
+}
+
+.service img {
+    scale: 0.7;
+}
+
+.firstSection {
+    align-items: center;
+    width: 50%;
+}
+
+.secondSection {
+    align-items: flex-start;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .service h1 {
+        font-size: 20px;
+    }
+    .service img {
+        scale: 0.6;
+    }
+}
+
+@media screen and (max-width: 500px) {
+   
+    .service {
+        flex-direction: column;
+        align-content: center;
+    }
+    .firstSection {
+        width: 100%;
+    }
+    .secondSection {
+        width: 100%;
+    }
+    .service h1 {
+        text-align: center;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 300px) {
+   .service img {
+    height: 75px;
+   } 
+
+   .service h1 {
+    font-size: 17px;
+   }
+    
+}
