@@ -3,7 +3,7 @@ const cors = require('cors')
 const controller = require('./controller')
 
 
-const PORT = 4004
+const port = process.env.PORT || 3000
 const app = express()
 
 app.use(cors())
@@ -13,4 +13,4 @@ app.use(express.json())
 app.get('/api/members', controller.getMembers)
 
 
-app.listen(PORT, () => console.log("Server running on port 4004"))
+app.listen(port, () => console.log(`App listening on port ${port}!`));
