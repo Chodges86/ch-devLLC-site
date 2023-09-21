@@ -3,7 +3,7 @@ const cors = require('cors')
 const controller = require('./controller')
 
 
-const port = process.env.PORT || 3000
+const port = 4004
 const app = express()
 
 app.use(cors())

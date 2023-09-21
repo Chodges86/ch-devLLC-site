@@ -1,12 +1,10 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-const port = process.env.PORT || 3000
-
 const Test = () => {
   const [members, setMembers] = useState();
 
-  const baseURL = `http://localhost:${port}/api`;
+  const baseURL = `http://localhost:4004/api`;
 
   useEffect(() => {
     async function fetchMembers() {
