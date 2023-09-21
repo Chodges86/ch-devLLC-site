@@ -5,6 +5,7 @@ const Test = () => {
   const [members, setMembers] = useState();
 
   const baseURL = `https://lobster-app-oiavg.ondigitalocean.app/api`;
+//   const localHost = "http://localhost:4004/api"
 
   useEffect(() => {
     async function fetchMembers() {
@@ -21,6 +22,7 @@ const Test = () => {
       ignore = true;
     };
   }, [baseURL]);
+
 
   if (members) {
     console.log(members.data);
