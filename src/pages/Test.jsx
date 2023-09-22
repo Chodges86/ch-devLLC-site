@@ -10,7 +10,7 @@ const Test = () => {
   useEffect(() => {
     async function fetchMembers() {
       setMembers(null);
-      const result = await axios.get(`${localHost}/api/members`);
+      const result = await axios.get(`/api/members`);
       if (!ignore) {
         setMembers(result);
       }
