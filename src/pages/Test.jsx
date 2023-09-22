@@ -5,12 +5,12 @@ const Test = () => {
   const [members, setMembers] = useState();
 
   // const baseURL = `https://lobster-app-oiavg.ondigitalocean.app/api`;
-//   const localHost = "http://localhost:4004/api"
+  const localHost = "http://localhost:4004"
 
   useEffect(() => {
     async function fetchMembers() {
       setMembers(null);
-      const result = await axios.get(`/api/members`);
+      const result = await axios.get(`${localHost}/api/members`);
       if (!ignore) {
         setMembers(result);
       }
@@ -24,12 +24,20 @@ const Test = () => {
   }, []);
 
 
-  if (members) {
-    console.log(members.data);
-  }
+  console.log(members);
+  // if (members) {
+  // }
 
-  // return <div>{members && members.data.map(member => <h1 key={member.id}>{member.name}</h1>)}</div>;
-  return <h1>Test Page</h1>
+  return (
+    <div>
+      {members ? 
+      members.data.map(member => <h1 key={member.id}>{member.name}</h1>)
+      : 
+      <h1>Data Not Recieved</h1>
+      }
+    </div>
+  )
+  // return <h1>Test Page</h1>
 };
 
 export default Test;
