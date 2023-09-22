@@ -28,7 +28,8 @@ const Test = () => {
     console.log(members.data);
   }
 
-  return <div>{members && members.data.map(member => <h1 key={member.id}>{member.name}</h1>)}</div>;
+  // return <div>{members && members.data.map(member => <h1 key={member.id}>{member.name}</h1>)}</div>;
+  return <h1>Test Page</h1>
 };
 
 export default Test;
