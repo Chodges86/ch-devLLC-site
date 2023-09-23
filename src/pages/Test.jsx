@@ -10,7 +10,7 @@ const Test = () => {
   useEffect(() => {
     async function fetchMembers() {
       setMembers(null);
-      const result = await axios.get(`/api/members`);
+      const result = await axios.get(`/api/members`, {port: 4004});
       if (!ignore) {
         setMembers(result);
       }
