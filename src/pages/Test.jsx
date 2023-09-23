@@ -33,7 +33,7 @@ const Test = () => {
       {members ? 
       members.data.map(member => <h1 key={member.id}>{member.name}</h1>)
       : 
-      <h1>Data Not Recieved</h1>
+      <h1>The Data Not Recieved</h1>
       }
     </div>
   )
