@@ -10,7 +10,7 @@ const Test = () => {
   useEffect(() => {
     async function fetchMembers() {
       setMembers(null);
-      const result = await axios.get(`/api/members`, {port: 4004});
+      const result = await axios.get('http://143.244.150.90:4004/api/members');
       if (!ignore) {
         setMembers(result);
       }
@@ -33,7 +33,7 @@ const Test = () => {
       {members ? 
       members.data.map(member => <h1 key={member.id}>{member.name}</h1>)
       : 
-      <h1>The Data Not Recieved</h1>
+      <h1>Data Has Been Not Recieved</h1>
       }
     </div>
   )
