@@ -10,7 +10,7 @@ const Test = () => {
   useEffect(() => {
     async function fetchMembers() {
       setMembers(null);
-      const result = await axios.get('http://143.244.150.90:4004/api/members');
+      const result = await axios.get('http://157.230.82.216:4004/api/members');
       if (!ignore) {
         setMembers(result);
       }
