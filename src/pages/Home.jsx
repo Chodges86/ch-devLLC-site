@@ -31,7 +31,7 @@ const Home = () => {
           content="CH Developments and Designs, LLC. is a web development company out of Hernando, MS offering affordable prices for web development to small businesses and organizations"
         />
       </Helmet>
-      <TitleBar text="<Beauty between the Brackets/>" />
+      <TitleBar text="<Beauty between the Brackets Testing This/>" />
       <div className={classes.overview}>
         <p>
           Your website begins and ends with angle brackets. What we do between
