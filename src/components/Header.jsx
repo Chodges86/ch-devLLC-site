@@ -13,6 +13,7 @@ const Header = () => {
         <NavLink to="/contact" className={() => classes.nav} end>
           Contact Me
         </NavLink>
+        <h1>Test</h1>
       </div>
     </div>
   );
